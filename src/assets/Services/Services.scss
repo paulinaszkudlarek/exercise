@@ -1,0 +1,97 @@
+$brand-red-color: #f38181;
+$brand-dark-color: #333333;
+
+.services {
+  text-align: center;
+  margin: -110px auto 90px auto;
+  padding: 0 20px;
+  display: grid;
+  max-width: 1200px;
+}
+
+.services__title {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+ 
+.services__title--small {
+  display: block;
+  font-size: 20px;    
+  margin-bottom: 10px;
+  color: $brand-dark-color;
+  font-weight: 400;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  
+  @media (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+.team__title--big {
+  font-size: 24px;    
+  text-transform: uppercase;
+  color: $brand-dark-color;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.services__separation {
+  width: 60px;
+  height: 3px;
+  background-color: $brand-red-color;
+  margin: 40px auto 0px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 50px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 40px 10px 60px;
+  
+  @media (min-width: 768px) {
+    grid-column-gap: 25px;
+    grid-row-gap: 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto 80px auto;
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  grid-row-gap: 40px;
+  justify-items: stretch;
+  align-items: stretch;
+  text-align: left;
+}
+
+.service__title {
+  text-transform: uppercase;
+  margin: 0px;
+  font-size: 14px;
+}
+
+.service__description {
+  font-size: 15px;
+  color: $brand-dark-color;
+}
+
+.service__icon {
+  width: 40px;
+  height: 40px;
+  align-content: start;
+  margin: 0px 30px auto 0px
+}
