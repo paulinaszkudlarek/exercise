@@ -11,12 +11,12 @@ function App() {
       <div className="app">
         <Navigation />
         <Routes>
-          <Route exact path="/vite-react/" element={<LandingPage />} />
-          <Route exact path="/vite-react/about" element={<LandingPage />} />
-          <Route exact path="/vite-react/service" element={<LandingPage />} />
-          <Route exact path="/vite-react/work" element={<LandingPage />} />
-          <Route exact path="/vite-react/blog" element={<LandingPage />} />
-          <Route exact path="/vite-react/contact" element={<LandingPage />} />
+          <Route exact path="exercise" element={<LandingPage />} />
+          <Route exact path="exerciseabout" element={<LandingPage />} />
+          <Route exact path="exerciseservice" element={<LandingPage />} />
+          <Route exact path="exercisework" element={<LandingPage />} />
+          <Route exact path="exerciseblog" element={<LandingPage />} />
+          <Route exact path="exercisecontact" element={<LandingPage />} />
         </Routes>
         <Footer />
       </div>
